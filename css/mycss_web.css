@@ -1,0 +1,107 @@
+h1,h2,h3,h4,h5,h6
+{
+    font-family:Helvetica;
+}
+
+
+h1 {
+    text-align: center;
+    font-size:60px;
+}
+
+p{
+    font-family: Georgia;
+}
+
+.purple-border{
+    border: 2px solid black;
+}
+
+.flex-display{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    flex-direction: row;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.flex-display> li{
+    margin:1px;
+    border:2px solid black;
+    
+}
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+
+  li a:hover {
+    background-color: #111;
+  }
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    background-color:grey;
+    padding:10px;
+  }
+
+  .column {
+    float: left;
+    width: 33.33%;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  #profile_pic {
+      height:200px;
+      width:200px;
+  }
+
+  #About_Me{
+      margin: 20px;
+    justify-content:   center;
+  }
+
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color:purple;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  #Extra > a:link, a:visited{
+    background-color:purple;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+  }

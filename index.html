@@ -1,40 +1,77 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Grace's Profile</title>
-    </head>
-    <body>
-       <span style = "color:midnightblue"> <h1>Grace LaMalva</h1></span>
 
-        <div id = "About_Me">
-        <h3>About me</h3>
-        <p>Name: Grace LaMalva</p>
-        <p>Major: Computer Science: Cyber Security Systems concentration</p>
-        <img src = https://pbs.twimg.com/profile_images/983091823445987328/11By848_.jpg />
-        </div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grace's Profile</title>
 
-        <div id = "Eduction">
-        <h3>Education</h3>
-        <p>I am currently pursuing my BS in Computer Science with a concentration in Cyber Security Systems. I am a senior. I started programming four years ago.</p>
-        </div>
+    <style>
+         body {
+            background-color: black;
+            color: white;
+            margin:10px;
+            padding:6px;
+        }
+    </style>
 
-        <div id = "Work_Experience">
-        <h3>Work Experience</h3>
-        <ul>
-            <li>CCPS Lab Control -- St. John's University</li>
-            <li>Research Assistant -- St. John's University</li>
-            <li>Cyber Security Intern -- New Jersey Courts</li>
-            <li>IT Technician Junior -- Havas Worldwide</li>
-            <li>IT Technician Intern -- Havas Worldwide</li>
-            <li>Busser -- Marcony Ristorante</li>
-            <li>Receptionist -- Avelino Agulto DDS</li>
-            <li>Freelance Visual Artist -- Grace LaMalva</li>
+    <link rel= "stylesheet" href="css/mycss_web.css">
+    <link rel = "stylesheet" href = "css/mycss_tablet.css" media = "max-width: 648px">
+</head>
+
+<body>
+
+    <span style="color:white; font-style:bold ">
+        <h1 class = "screen_only">Grace LaMalva</h1>
+    </span>
+
+    <div id="Menu">
+        <ul class="flex-display">
+            <li> <a href="#About_Me">About me </a></li>
+            <li><a href="#Education">Education</a></li>
+            <li><a href="#Work_Experience">Work Experience</a></li>
+            <li><a href="#Programming_Skills">Programming Experience</a></li>
+            <li><a href="#General_Interests">General Interests</a></li>
+            <li><a href="#Favorites">Favorites</a></li>
+            <li><a href="#Website">Website</a></li>
+            <li><a href="#My_Projects">My Projects</a></li>
+            <li><a href="#Extra"> Extra</a></li>
         </ul>
+    </div>
+    
+    
+    <div id="About_Me" class = "flex-display" >
+        <img id = "profile_pic" src=https://pbs.twimg.com/profile_images/983091823445987328/11By848_.jpg />
+    </div>
+
+    <div id="content" class="row">
+      
+
+       
+        <div id="Eduction" class="column">
+            <h3>Education</h3>
+            <p>I am currently pursuing my BS in Computer Science with a concentration in Cyber Security Systems. I am a
+                senior. I started programming four years ago.</p>
         </div>
 
-        <div id = "Programming_Skills">
-        <h3>Programming Skills</h3>
-        <p>I have three years of programming practice with several projects exemplifying my skills. My specialties include secure
-            software development, web development, and java development.
+        <div id="Work_Experience" class="column">
+            <h3>Work Experience</h3>
+            <ul>
+                <li>CCPS Lab Control -- St. John's University</li>
+                <li>Research Assistant -- St. John's University</li>
+                <li>Cyber Security Intern -- New Jersey Courts</li>
+                <li>IT Technician Junior -- Havas Worldwide</li>
+                <li>IT Technician Intern -- Havas Worldwide</li>
+                <li>Busser -- Marcony Ristorante</li>
+                <li>Receptionist -- Avelino Agulto DDS</li>
+                <li>Freelance Visual Artist -- Grace LaMalva</li>
+            </ul>
+        </div>
+
+        <div id="Programming_Skills" class = "column">
+            <h3>Programming Skills</h3>
+            <p>I have three years of programming practice with several projects exemplifying my skills. My specialties
+                include secure
+                software development, web development, and java development.
             <ul>Languages:</ul>
             <li>Java -- 3.8/5</li>
             <li>Python -- 3.5/5</li>
@@ -44,45 +81,49 @@
             <li>Terminal/Shell Scripting -- 3/5</li>
             <li>Windows Command Line -- 2.7/5</li>
             <li>Prolog -- 2/5</li>
-        </p>
+            </p>
         </div>
 
-        <div id = "General_Interests">
-        <h3>General Interests</h3>
-        <p>My interests include programming, making art, watching TV/Movies, going out with friends and meeting new people, learning Spanish,
-            playing video games, amongst a plethora of other things.
-        </p>
+        <div id="General_Interests" class="column">
+            <h3>General Interests</h3>
+            <p>My interests include programming, making art, watching TV/Movies, going out with friends and meeting new
+                people, learning Spanish,
+                playing video games, amongst a plethora of other things.
+            </p>
         </div>
 
-        <div id = "Favorites">
-        <h3>Favorites</h3>
-        <p>Favorite Song: Novacane by Frank Ocean</p>
-        <p>Favorite Movie: Inception directed by Christopher Nolan</p>
-        <p>Favorite TV Show: Atlanta produced by Donald Glover </p>
+        <div id="Favorites"class="column">
+            <h3>Favorites</h3>
+            <p>Favorite Song: Novacane by Frank Ocean</p>
+            <p>Favorite Movie: Inception directed by Christopher Nolan</p>
+            <p>Favorite TV Show: Atlanta produced by Donald Glover </p>
         </div>
 
-        <div id = "Website">
-        <h3>Website</h3>
-        <p>Favorite Website: <a href = "https://www.youtube.com" target = "_blank" >Youtube</a> </p>
+        <div id="Website"class="column">
+            <h3>Website</h3>
+            <p>Favorite Website: <a href="https://www.youtube.com" target="_blank">Youtube</a> </p>
+        </div>
+        <form class = column action="Project-1.html">
+            <h3>Dogs or Cats</h3>
+            <div>
+                <label for="dog_cats">Dogs or cats</label>
+                <input name="dog_cats" type="radio" value="dogs">Dogs
+                <input name="dog_cats" type="radio" value="cats">Cats
+                <input type="submit" value="submit">
+            </div>
+        </form>
+
+        <div id="Extra" >
+            <h3>Extra</h3>
+            <a href="https://github.com/gracelamalva/CUS1172_Project1/blob/master/img/apology.jpg?raw=true">The
+                Apology</a>
+            <h5>Video: Paradis</h5>
+            <iframe width="806" height="473" src="https://www.youtube.com/embed/CefLfzruHg0" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
 
-        <div id = "Menu">
-        <h3>Menu</h3>
-        <ul>
-            <li> <a href = "#About_Me" >About me </a></li>
-            <li><a href = "#Education">Eduction</a></li>
-            <li><a href = "#Work_Experience">Work Experience</a></li>
-            <li><a href="#Programming_Skills">Programming Experience</a></li>
-            <li><a href = "#General_Interests">General Interests</a></li>
-            <li><a href = "#Favorites">Favorites</a></li>
-            <li><a href = "#Website">Website</a></li>
-            <li><a href = "#Menu">Menu</a></li>
-            <li><a href = #My_Projects>My Projects</a></li>
-            <li><a href = "#Extra"> Extra</a></li>
-        </ul>
-        </div>
-
-        <div id = "My_Projects">
+        <div id="My_Projects">
             <h3>My Projects in this course</h3>
             <table>
                 <tr>
@@ -92,27 +133,16 @@
                 </tr>
                 <tr>
                     <td>Project 1 - Milestone 1</td>
-                    <td>Project 1 builds upon our first lesson with creating an HTML page. In this project we create a page by creating a sort of profile for ourselves</td>
-                    <td><a href = https://github.com/gracelamalva/CUS1172_Project1>Project 1 on GitHub</a></td>
+                    <td>Project 1 builds upon our first lesson with creating an HTML page. In this project we create a
+                        page
+                        by creating a sort of profile for ourselves</td>
+                    <td><a href=https://github.com/gracelamalva/CUS1172_Project1>Project 1 on GitHub</a></td>
                 </tr>
             </table>
         </div>
 
-        <div id = "Extra">
-        <h3>Extra</h3>
-        <a href = "https://github.com/gracelamalva/CUS1172_Project1/blob/master/img/apology.jpg?raw=true" >The Apology</a>
-        <h5>Video: Paradis</h5>
-        <iframe width="806" height="473" src="https://www.youtube.com/embed/CefLfzruHg0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+    </div>
 
-        <form action = "Project-1.html">
-            <h3>Dogs or Cats</h3>
-            <div>
-                <label for ="dog_cats">Dogs or cats</label>
-                <input name = "dog_cats" type = "radio" value ="dogs">Dogs
-                <input name = "dog_cats" type = "radio" value ="cats">Cats
-                <input type = "submit" value = "submit">
-            </div>
-        </form>
-    </body>
+</body>
+
 </html>
